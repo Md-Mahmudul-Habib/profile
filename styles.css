@@ -443,5 +443,69 @@ h3 {
         height: 30px;
         font-size: 20px;
     }
+    .side-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .researchgate {
+        width: 500px;
+    }
+    .contact {
+        width: 500px;
+    }
 }
 
+@media(max-width:400px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .main-skill-container {
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-skill {
+        margin-bottom: 10px;
+    }
+    .followme {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .researchgate {
+        width: 100%;
+    }
+    .skills {
+        width: 100%;
+    }
+    .hobbies {
+        width: 100%;
+    }
+    .message {
+        width: 100%;
+    }
+    .edications {
+        width: 100%;
+    }
+    .expriences {
+        width: 100%;
+        text-align: justify;
+    }
+    .publications {
+        width: 100%;
+    }
+    .publications h4 {
+        white-space: inherit;
+    }
+    .publication .date {
+        position: relative;
+    }
+    .interests-languages {
+        width: 100%;
+    }
+}
