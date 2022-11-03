@@ -11,6 +11,28 @@
 </head>
 
 <body>
+    <div class="nav-bar" id="mynav-bar"> 
+        <a class="active" href="#"><i class="fa-solid fa-house-chimney"></i>  HOME</a>
+        <a href="#followme"><i class="fa-solid fa-thumbs-up"></i>  FOLLOW ME</a>
+        <a href="#contact"><i class="fa-solid fa-address-book"></i>  CONTACT</a>
+        <a href="#researchgate"><i class="fa-brands fa-researchgate"></i>  RESEARCHAGATE</a>
+        <div class="dropdown">
+            <button class="drop-btn">MORE
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#skills">SKILLS</a>
+                <a href="#hobbies">HOBBIES</a>
+                <a href="#message">MESSAGE ME</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#experience">EXPERIENCES</a>
+                <a href="#publication">PUBLICATIONS</a>
+                <a href="#interests">INTERESTS</a>
+                <a href="#languages">LANGUAGES</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
     <div class="header-container">
         <div class="header-details-container">
             <div class="header-details">
@@ -53,7 +75,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="images/self_photo_half.jpg" alt="Self Photo">
+            <img src="images/self_photo.jpg" alt="Self Photo">
         </div>
     </div>
     <div class="body-container">
@@ -94,14 +116,14 @@
                 </a>
             </div>
             <div class="researchgate">
-                <h3>RESEARCHGATE</h3>
+                <h3 id="researchgate">RESEARCHGATE</h3>
                 <hr>
                 <div class="area"><p>Research Interest Score</p><h5>74.8</h5></div>
                 <div class="area"><p>Citations</p><h5>22</h5></div>
                 <div class="area"><p>h-index</p><h5>2</h5></div>
             </div>
             <div class="skills">
-                <h3>SKILLS</h3>
+                <h3 id="skills">SKILLS</h3>
                 <hr>
                 <div class="skill">
                     <p>Communication</p>
@@ -129,7 +151,7 @@
                 </div>
             </div>
             <div class="hobbies">
-                <h3>HOBBIES</h3>
+                <h3 id="hobbies">HOBBIES</h3>
                 <hr>
                 <div class="hobby">
                     <p>Praying</p>
@@ -151,7 +173,7 @@
                 </div>
             </div>
             <div class="message">
-                <h3>Message Me</h3>
+                <h3 id="message">MESSAGE ME</h3>
                 <hr>
                 <form action="mailto:mahmudul.024@gmail.com" method="POST" enctype="text/plain">
                     <div class="fields">
@@ -212,7 +234,7 @@
                 </div>
             </div>
             <div class="expriences">
-                <h3>EXPERIENCES</h3>
+                <h3 id="experience">EXPERIENCES</h3>
                 <hr>
                 <div class="experience">
                     <h4>Scientifice Officer</h4>
@@ -230,7 +252,7 @@
                 </div>
             </div>
             <div class="publications">
-                <h3>PUBLICATIONS</h3>
+                <h3 id="publication">PUBLICATIONS</h3>
                 <hr>
                 <div class="publication">
                     <h4>Intelligent Decision Technologies</h4>
@@ -349,5 +371,23 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mynav-bar");
+          if (x.className === "nav-bar") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-bar";
+          }
+        }
+    </script>
 </body>
+<footer>
+    <div class="footer-container">
+        <hr>
+        <p class="copyright">Md Mahmudul Habib © 2022</p>
+    </div>
+</footer>
 </html>
+
+
